@@ -7,9 +7,30 @@ namespace tic_tac_toe
         {
             InitializeComponent();
         }
-
+        void xwin()
+        {
+            label1.Text = "X WINS!";
+            MessageBox.Show("X wins!");
+        }
+        void owin()
+        {
+            label1.Text = "O WINS!";
+            MessageBox.Show("O wins!");
+        }
       
-
+        void end()
+        {
+            
+            button1.Enabled = false;
+            button2.Enabled = false;
+            button3.Enabled = false;
+            button4.Enabled = false;
+            button5.Enabled = false;
+            button6.Enabled = false;
+            button7.Enabled = false;
+            button8.Enabled = false;
+            button9.Enabled = false;
+        }
         private void button9_Click_1(object sender, EventArgs e)
         {
             if(x==true)
@@ -19,17 +40,8 @@ namespace tic_tac_toe
                 button9.Text = "X";
                 if(button6.Text == "X" && button3.Text == "X" || button8.Text == "X" && button7.Text == "X" || button5.Text == "X" && button1.Text == "X"  )
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-                    label1.Text = "X WINS!";
-                    MessageBox.Show("X wins!");
+                    end();
+                    xwin();
 
                 }
                 else
@@ -45,17 +57,8 @@ namespace tic_tac_toe
                 button9.Text = "O";
                 if (button6.Text == "O" && button3.Text == "O" || button8.Text == "O" && button7.Text == "O" || button5.Text == "O" && button1.Text == "O")
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-                    label1.Text = "O WINS!";
-                    MessageBox.Show("O wins!");
+                    end();
+                    owin();
                 }
                 else
                 {
@@ -74,18 +77,8 @@ namespace tic_tac_toe
                 button8.Text = "X";
                 if (button5.Text == "X" && button2.Text == "X" || button7.Text == "X" && button9.Text == "X")
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-
-                    label1.Text = "X WINS!";
-                    MessageBox.Show("X wins!");
+                    end();
+                    xwin();
                 }
                 else
                 {
@@ -100,17 +93,8 @@ namespace tic_tac_toe
                 button8.Text = "O";
                 if (button5.Text == "O" && button2.Text == "O" || button7.Text == "O" && button9.Text == "O")
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-                    label1.Text = "O WINS!";
-                    MessageBox.Show("O wins!");
+                    end();
+                    owin();
                 }
                 else
                 {
@@ -129,17 +113,8 @@ namespace tic_tac_toe
                 button7.Text = "X";
                 if (button4.Text == "X" && button1.Text == "X" || button8.Text == "X" && button9.Text == "X" || button5.Text == "X" && button3.Text == "X")
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-                    label1.Text = "X WINS!";
-                    MessageBox.Show("X wins!");
+                    end();
+                    xwin();
                 }
                 else
                 {
@@ -154,17 +129,9 @@ namespace tic_tac_toe
                 button7.Text = "O";
                 if (button4.Text == "O" && button1.Text == "O" || button8.Text == "O" && button9.Text == "O" || button5.Text == "O" && button3.Text == "O")
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-                    label1.Text = "O WINS!";
-                    MessageBox.Show("O wins!");
+                    end();
+                    owin();
+
                 }
                 else
                 {
@@ -188,18 +155,8 @@ namespace tic_tac_toe
                 button6.Text = "X";
                 if (button5.Text == "X" && button4.Text == "X" || button9.Text == "X" && button3.Text == "X")
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-                    label1.Text = "X WINS!";
-
-                    MessageBox.Show("X wins!");
+                    end();
+                    xwin();
                 }
                 else
                 {
@@ -214,17 +171,9 @@ namespace tic_tac_toe
                 button6.Text = "O";
                 if (button5.Text == "O" && button4.Text == "O" || button9.Text == "O" && button3.Text == "O")
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-                    label1.Text = "O WINS!";
-                    MessageBox.Show("O wins!"); 
+                    end();
+                    owin();
+
                 }
                 else
                 {
@@ -243,17 +192,9 @@ namespace tic_tac_toe
                 button5.Text = "X";
                 if (button2.Text == "X" && button8.Text == "X" || button4.Text == "X" && button6.Text == "X" || button1.Text == "X" && button9.Text == "X"|| button7.Text == "X" && button3.Text == "X")
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-                    label1.Text = "X WINS!";
-                    MessageBox.Show("X wins!");
+                    end();
+
+                    xwin();
                 }
                 else
                 {
@@ -268,17 +209,9 @@ namespace tic_tac_toe
                 button5.Text = "O";
                 if (button2.Text == "O" && button8.Text == "O" || button4.Text == "O" && button6.Text == "O" || button1.Text == "O" && button9.Text == "O" || button7.Text == "O" && button3.Text == "O")
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-                    label1.Text = "O WINS!";
-                    MessageBox.Show("O wins!");
+                    end();
+                    owin();
+
                 }
                 else
                 {
@@ -297,17 +230,8 @@ namespace tic_tac_toe
                 button4.Text = "X";
                 if (button1.Text == "X" && button7.Text == "X" || button5.Text == "X" && button6.Text == "X")
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-                    label1.Text = "X WINS!";
-                    MessageBox.Show("X wins!");
+                    end();
+                    xwin();
                 }
                 else
                 {
@@ -322,17 +246,8 @@ namespace tic_tac_toe
                 button4.Text = "O";
                 if (button1.Text == "O" && button7.Text == "O" || button5.Text == "O" && button6.Text == "O")
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-                    label1.Text = "O WINS!";
-                    MessageBox.Show("O wins!"); 
+                    end(); owin();
+
                 }
                 else
                 {
@@ -351,17 +266,8 @@ namespace tic_tac_toe
                 button3.Text = "X";
                 if (button6.Text == "X" && button9.Text == "X" || button2.Text == "X" && button1.Text == "X" || button5.Text == "X" && button7.Text == "X")
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-                    label1.Text = "X WINS!";
-                    MessageBox.Show("X wins!");
+                    end();
+                    xwin();
 
                 }
                 else
@@ -378,17 +284,9 @@ namespace tic_tac_toe
                 if (button6.Text == "O" && button9.Text == "O" || button2.Text == "O" && button1.Text == "O" || button5.Text == "O" && button7.Text == "O")
                 {
                    
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-                    label1.Text = "O WINS!";
-                    MessageBox.Show("O wins!"); 
+                    end(); 
+                    owin();
+
 
                 }
                 else
@@ -408,17 +306,8 @@ namespace tic_tac_toe
                 button2.Text = "X";
                 if (button5.Text == "X" && button8.Text == "X" || button1.Text == "X" && button3.Text == "X")
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-                    label1.Text = "X WINS!";
-                    MessageBox.Show("X wins!"); 
+                    end();
+                    xwin();
 
                 }
                 else
@@ -434,17 +323,9 @@ namespace tic_tac_toe
                 button2.Text = "O";
                 if (button5.Text == "O" && button8.Text == "O" || button1.Text == "O" && button3.Text == "O")
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-                    label1.Text = "O WINS!";
-                    MessageBox.Show("O wins!");
+                    end();
+                    owin();
+
                 }
                 else
                 {
@@ -463,17 +344,8 @@ namespace tic_tac_toe
                 button1.Text = "X";
                 if (button4.Text == "X" && button7.Text == "X" || button2.Text == "X" && button3.Text == "X" || button5.Text == "X" && button9.Text == "X")
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-                    label1.Text = "X WINS!";
-                    MessageBox.Show("X wins!"); 
+                    end();
+                    xwin();
 
                 }
                 else
@@ -489,17 +361,8 @@ namespace tic_tac_toe
                 button1.Text = "O";
                 if (button4.Text == "O" && button7.Text == "O" || button2.Text == "O" && button3.Text == "O" || button5.Text == "O" && button9.Text == "O")
                 {
-                    button1.Enabled = false;
-                    button2.Enabled = false;
-                    button3.Enabled = false;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    button6.Enabled = false;
-                    button7.Enabled = false;
-                    button8.Enabled = false;
-                    button9.Enabled = false;
-                    label1.Text = "O WINS!";
-                    MessageBox.Show("O wins!"); 
+                    end();
+                    owin();
                 }
                 else
                 {
@@ -507,6 +370,16 @@ namespace tic_tac_toe
 
                 }
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_TextChanged(object sender, EventArgs e)
+        {
+        
         }
     }
 }
