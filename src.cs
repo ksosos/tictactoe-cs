@@ -10,12 +10,12 @@ namespace tic_tac_toe
         void xwin()
         {
             label1.Text = "X WINS!";
-            MessageBox.Show("X wins!");
+            MessageBox.Show("X wins!"); // function to end the game if X wins
         }
         void owin()
         {
             label1.Text = "O WINS!";
-            MessageBox.Show("O wins!");
+            MessageBox.Show("O wins!"); // function to end the game if O wins. the label in the game shows the text of who won and a messagebox is also shown which tells you who won.
         }
       
         void end()
@@ -23,19 +23,19 @@ namespace tic_tac_toe
             
             foreach(var button in this.Controls.OfType<Button>())
         {
-            button.Enabled = false;
+            button.Enabled = false; // this function is to disable all the tictactoe buttons when the game is finished. hence the name end()
         }
         }
         private void button9_Click_1(object sender, EventArgs e)
         {
-            if(x==true)
+            if(x==true) // x is a variable used to check who is playing. if x is true then X is playing if not, then O is playing
             {
                 button9.Enabled = false;
                 x = false;
                 button9.Text = "X";
-                if(button6.Text == "X" && button3.Text == "X" || button8.Text == "X" && button7.Text == "X" || button5.Text == "X" && button1.Text == "X"  )
+                if(button6.Text == "X" && button3.Text == "X" || button8.Text == "X" && button7.Text == "X" || button5.Text == "X" && button1.Text == "X"  ) // check all the possible combinations of the selected button
                 {
-                    end();
+                    end(); // if they match, it ends and x wins. this is practically the same for the rest of the code.
                     xwin();
 
                 }
